@@ -1,0 +1,108 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* Fundo branco para a tabela */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo para os cabeçalhos da tabela */
+th {
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para as células da tabela */
+td {
+    border: 1px solid #ddd; /* Borda suave nas células */
+    padding: 12px 15px;
+    text-align: left;
+    background-color: #f9f9f9; /* Fundo suave para células */
+}
+
+/* Estilo para o botão de editar */
+button.edit-btn {
+    background-color: #007bff; /* Cor azul */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeitos no botão de editar */
+button.edit-btn:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+button.edit-btn:active {
+    background-color: #003d7a; /* Cor ao pressionar */
+}
+
+/* Destaque para clientes vencidos */
+.vencido {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+/* Destaque para clientes próximos ao vencimento */
+.proximo-vencimento {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px 8px;
+    }
+
+    button.edit-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+/* Estilo para mensagens de feedback */
+#mensagem {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

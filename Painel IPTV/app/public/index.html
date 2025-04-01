@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel IPTV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Painel de Controle IPTV</h1>
+
+    <form id="cliente-form">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="text" id="login" placeholder="Login" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <input type="text" id="mac" placeholder="Endereço MAC (XX:XX:XX:XX:XX:XX)">
+        <input type="text" id="key" placeholder="Chave">
+        <select id="tipoApp" required>
+            <option value="">Selecione o tipo de app</option>
+            <option value="Smart TV">Smart TV</option>
+            <option value="PC">PC</option>
+            <option value="Smartphone">Smartphone</option>
+        </select>
+        <input type="date" id="vencimento" required>
+        <select id="status" required>
+            <option value="Pago">Pago</option>
+            <option value="Não Pago">Não Pago</option>
+        </select>
+        <input type="text" id="contato" placeholder="Contato" required>
+        <button type="submit">Adicionar Cliente</button>
+        <button type="button" onclick="document.getElementById('cliente-form').reset()">Limpar</button>
+    </form>
+
+    <div id="mensagem"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Login</th>
+                <th>MAC</th>
+                <th>Key</th>
+                <th>Tipo de App</th>
+                <th>Vencimento</th>
+                <th>Status</th>
+                <th>Contato</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="clientes-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
